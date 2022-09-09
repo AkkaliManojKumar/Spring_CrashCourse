@@ -1,0 +1,38 @@
+// IF I WANT TO CALL SPECIFIC CONSTRUCTOR WE USE INDEX AND TYPE IN CONSTRUCTOR OF XML FILE
+
+
+public Book(String name,int isbn) {               //---------------------------->>>> 1) FIRST CONSTRUCTOR
+		super();
+		System.out.println("const with args str(name) , int(isbn)");
+		this.isbn = isbn;
+		this.name = name;
+	}
+	
+           
+  index            0          1
+                   |          |
+	public Book(int isbn, String name)                           //------->>>>>>  2) SECOND CONSTRUCTOR 
+		super();
+		System.out.println("this is my cont");
+		System.out.println("const with args int(isbn) ,str(name)");
+		this.isbn = isbn;
+		this.name = name;
+	}
+	
+
+
+
+
+<bean id="book3" class="com.demo.springcoremodule.Book">
+<constructor-arg index="0" type="int" value="44"></constructor-arg>                // ----->  IF I WANT TO CALL 2) SECOND CONSTRUCTOR 
+<constructor-arg index="1" type="String" value="55"> </constructor-arg>
+</bean>
+
+
+<bean id="book3" class="com.demo.springcoremodule.Book">
+<constructor-arg index="1" type="int" value="44"></constructor-arg>                // ----->  IF I WANT TO CALL 1) first CONSTRUCTOR 
+<constructor-arg index="0" type="String" value="55"> </constructor-arg>
+</bean>
+
+
+
