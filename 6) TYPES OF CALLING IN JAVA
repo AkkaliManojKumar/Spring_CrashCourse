@@ -1,0 +1,25 @@
+1)----->>>> CONSTRUCTOR CALLING JAVA 
+
+String a;
+int b;
+constructor(String s, int i){   ----> constructor
+this.a=s;
+this.b=i;
+}
+man obj = new man('hey',7);
+
+2)------>>>>>>>>>>>>>>SETTER CALLING IN JAVA 
+
+int k=8
+method(){
+}
+setIsbn(int j){   -----> methos
+}
+setname(String h){ ---->
+}
+
+man obj = new man();
+obj.method();
+obj.k
+obj.setIsbn(55);
+obj.setName("test");
