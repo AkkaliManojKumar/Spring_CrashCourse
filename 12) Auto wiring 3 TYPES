@@ -142,7 +142,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 autowire="default"    : no autowiring // no injection is done
 autowire = "byType"   : injects the bean through setter  , requires a single matching bean else throws noUniqueBeanException
  autowire = "byName"  :  autowire the bean with property name, if not found injects null 
-                          what ever the name property name have it takes that bean 
+                          what ever the name property name (NAME OF THE VARIABLE IN LIBRARY CLASS) have it takes that bean 
  -->
 ---------------------------------------------------------------------------
 
