@@ -9,7 +9,7 @@ public class Library {
 
 	private String libraryName;
 	private String address;
-	private Book book;
+	private Book book;   //-------------------->>>> property name is (book) 
 	
 	
 	public String getLibraryName() {
@@ -119,7 +119,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 
-<bean id="book" class="com.demo.springcoremodule.Book">
+<bean id="book" class="com.demo.springcoremodule.Book">                 /// ----------------->>>>>>  THIS BEAN IS GET INJECTED  TO THE LIBRARY
 <property name="isbn" value="50"></property>
 <property name="name" value="My First World Cup"></property>
 </bean> 
@@ -142,7 +142,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 autowire="default"    : no autowiring // no injection is done
 autowire = "byType"   : injects the bean through setter  , requires a single matching bean else throws noUniqueBeanException
  autowire = "byName"  :  autowire the bean with property name, if not found injects null 
-                          what ever the name property name (NAME OF THE VARIABLE IN LIBRARY CLASS) have it takes that bean 
+                          (NAME OF THE VARIABLE IN LIBRARY CLASS & bean id which is to be injected are same that will injected) 
  -->
 ---------------------------------------------------------------------------
 
