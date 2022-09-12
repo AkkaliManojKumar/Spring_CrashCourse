@@ -72,12 +72,14 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 <property name="isbn" value="50"></property>
 <property name="name" value="My First World Cup"></property>
 <property name="volumes">
-<array>
+
+<array>  [OR] <list>
+
 <value> 1 in Lords </value>                         <!-- CREATING AN ARRAY IN THE BEAN INSIDE PROPERTY -->
 <value> 2 in wankhede</value>
 <value> 3 chinnaswami</value>
 
-</array>
+</array> [OR] </list>
 
 </property>
 </bean> 
