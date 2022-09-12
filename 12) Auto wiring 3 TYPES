@@ -134,7 +134,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 <property name="libraryName" value="Central Library"> </property>
 <property name="address" value="m.g road bangalore"></property>
 
-<property name="book" ref="book"> </property>   //autowire = "byName"
+<!-- <property name="book" ref="book"> </property>  --> 
  
 </bean>
 ---------------------------------------------------------------
